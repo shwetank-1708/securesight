@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* a.active {
+  color: #38bdf8;
+} */
+
+.slick-slider .slick-arrow:before {
+  color: #434343 !important;
+  font-size: 50px !important;
+  position: absolute !important;
+}
+
+/* Change the position of left arrow */
+.slick-prev {
+  left: -60px !important; /* Moves the left arrow further left */
+  z-index: 10; /* Ensures the arrow stays above other elements */
+}
+
+/* Change the position of right arrow */
+.slick-next {
+  right: -10px !important; /* Moves the right arrow further right */
+  z-index: 10;
+}
+
+@media (max-width: 400px) {
+  .slick-slider .slick-arrow:before {
+    font-size: 30px !important; /* Adjust size */
+  }
+
+  .slick-prev {
+    left: -50px !important; /* Moves the left arrow further left */
+    z-index: 10; /* Ensures the arrow stays above other elements */
+  }
+
+  /* Change the position of right arrow */
+  .slick-next {
+    right: -20px !important; /* Moves the right arrow further right */
+    z-index: 10;
+  }
+}
